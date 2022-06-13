@@ -168,7 +168,7 @@ int main() {
   Competition.autonomous(autonomous);
   Competition.drivercontrol(usercontrol);
 
-  // Run the pre-autonomous function.
+  // Run the pre-autonomous function, basically initialize
   pre_auton();
 
   // Prevent main from exiting with an infinite loop.
