@@ -12,6 +12,14 @@ controller Controller1 = controller(primary);
 motor FlywheelMotorA = motor(PORT1, ratio6_1, true);
 motor FlywheelMotorB = motor(PORT2, ratio6_1, false);
 motor_group Flywheel = motor_group(FlywheelMotorA, FlywheelMotorB);
+motor LeftMotorsMotorA = motor(PORT3, ratio18_1, false);
+motor LeftMotorsMotorB = motor(PORT4, ratio18_1, false);
+motor_group LeftMotors = motor_group(LeftMotorsMotorA, LeftMotorsMotorB);
+motor RightMotorsMotorA = motor(PORT5, ratio18_1, true);
+motor RightMotorsMotorB = motor(PORT6, ratio18_1, true);
+motor_group RightMotors = motor_group(RightMotorsMotorA, RightMotorsMotorB);
+encoder RightEncoder = encoder(Brain.ThreeWirePort.A);
+encoder LeftEncoder = encoder(Brain.ThreeWirePort.C);
 
 // VEXcode generated functions
 // define variable for remote controller enable/disable
